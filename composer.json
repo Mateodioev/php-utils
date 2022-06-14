@@ -1,0 +1,12 @@
+{
+    "name": "mateodioev/utils",
+    "description": "Php utils",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mateodioev\\Utils\\": "src/"
+        }
+    },
+    "require": {}
+}
