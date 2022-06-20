@@ -17,4 +17,13 @@ class Numbers
     }
     return $num;
   }
+
+  /**
+   * returns the percentage of a number
+   */
+  public static function getPercentage(float|int $i, float|int $total=100): float|int
+  {
+    return ($i*100) / $total;
+  }
+  
 }
