@@ -2,7 +2,7 @@
 
 namespace Mateodioev\Utils;
 
-use Exception;
+use UnexpectedValueException;
 
 /**
  * luhn Algorithm
@@ -57,7 +57,7 @@ class Luhn
     $inputLength = \strlen($input);
 
     if ($inputLength === 0) {
-      throw new Exception('Invalid input string');
+      throw new UnexpectedValueException('Invalid input string');
     }
     $inputLength--;
 
