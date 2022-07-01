@@ -3,7 +3,8 @@
 namespace Mateodioev\Utils;
 
 use CURLFile;
-use Exception;
+use Mateodioev\Utils\Exceptions\FileException;
+
 use function is_file;
 use function is_readable;
 use function file_exists;
@@ -33,7 +34,7 @@ class Files
     } elseif (Strings::IsValidUrl($file)) {
       return $file;
     } else {
-      throw new Exception('Invalid file input');
+      throw new FileException('Invalid file ' . $file);
     }
   }
 }
