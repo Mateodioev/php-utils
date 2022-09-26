@@ -4,19 +4,6 @@ namespace Mateodioev\Utils;
 
 class Strings
 {
-
-  /**
-   * Validar si un string es una url valida
-   * 
-   * @param string $url URL a validar
-   * @return bool true si es una url valida, false en caso contrario
-   * @deprecated Use `Network::IsValidUrl()` instead.
-   */
-  public static function IsValidUrl(string $url): bool
-  {
-    return Network::IsValidUrl($url);
-  }
-
   /**
    * - U+200B zero width space
    * - U+200C zero width non-joiner Unicode code point

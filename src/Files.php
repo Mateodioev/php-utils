@@ -31,7 +31,7 @@ class Files
   {
     if (self::isFile($file)) {
       return new CURLFile($file);
-    } elseif (Strings::IsValidUrl($file)) {
+    } elseif (Network::IsValidUrl($file)) {
       return $file;
     } else {
       throw new FileException('Invalid file ' . $file);
