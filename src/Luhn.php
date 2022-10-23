@@ -20,7 +20,7 @@ class Luhn
 
     for ($i=0; $i < $nDigits; $i++) { 
       $num = $digits[$i];
-      if ($i%2) {
+      if ($i%2 === 0) {
         $num *= 2;
         $num = \array_sum(\str_split($num));
       }
