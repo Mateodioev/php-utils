@@ -30,7 +30,7 @@ class Network
    * Validar si un string es una IP v4 valida
    *
    * @param string $ip IP a validar
-   * @param boolean $only_ipv4 Si es true, solo se validara si es una IP v4, si es false, se validara si es una IP v4 o v6
+   * @param bool $only_ipv4 Si es true, solo se validara si es una IP v4, si es false, se validara si es una IP v4 o v6
    */
   public static function IsValidIp(string $ip, bool $only_ipv4 = false): bool
   {
