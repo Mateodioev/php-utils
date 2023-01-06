@@ -1,8 +1,8 @@
-<?php 
+<?php
 
 namespace Mateodioev\Utils\Exceptions;
 
-interface ExceptionInterface extends \Throwable 
+interface ExceptionInterface extends \Throwable
 {
-  # code...
+    # code...
 }
