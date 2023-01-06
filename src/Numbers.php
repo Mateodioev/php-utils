@@ -1,6 +1,7 @@
 <?php 
 
 namespace Mateodioev\Utils;
+use Mateodioev\Utils\Exceptions\NumbersException;
 
 class Numbers
 {
@@ -23,7 +24,33 @@ class Numbers
    */
   public static function getPercentage(float|int $i, float|int $total=100): float|int
   {
-    return ($i*100) / $total;
+	return ($i*100) / $total;
   }
-  
+
+  /**
+   * Return a integer from a string
+   * @param string $str String to convert
+   * @throws NumbersException
+   */
+	public static function toInt(string $str): int
+	{
+	if (!is_numeric($str)) {
+		throw new NumbersException('The string is not a number');
+	}
+	return (int) $str;
+  }
+
+	/**
+	 * Summary of toFloat
+	 * @param string $str String to convert
+	 * @throws NumbersException
+	 * @return float
+	 */
+	public static function toFloat(string $str): float
+	{
+		if (!is_numeric($str)) {
+			throw new NumbersException('The string is not a float');
+		}
+		return (float) $str;
+	}
 }
