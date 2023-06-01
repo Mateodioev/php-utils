@@ -4,7 +4,7 @@ namespace Mateodioev\Utils\Exceptions;
 
 use RuntimeException;
 
-final class RequestException extends RuntimeException implements ExceptionInterface
+class RequestException extends RuntimeException implements ExceptionInterface
 {
     # code...
 }
