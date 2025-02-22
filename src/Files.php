@@ -19,9 +19,8 @@ class Files
     {
         clearstatcache();
         return is_file($file)
-          && is_readable($file)
-          && file_exists($file)
-          && filesize($file) > 0;
+            && is_readable($file)
+            && file_exists($file);
     }
 
     /**
